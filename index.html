@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div align="center">
+        <div class="head">
+            <marquee class="scroll">TIC-TAC-TOE</marquee>
+        </div>
+    </div>
+    <div align="center" style="margin-top:30px;">
+        <input type="text" value="X's turn" id="turn" class="red" readonly>
+    </div>
+    <div align="center" class="box1">
+        <div class="box">
+            <table>
+
+                <tr>
+                    <td>
+                        <input type="button" class="b" id="b0" onclick="toe('0')" value="">
+                    </td>
+                    <td>
+                        <input type="button" class="b" id="b1" onclick="toe('1')" value="" >
+                    </td>
+                    <td>
+                        <input type="button" class="b" id="b2" onclick="toe('2')" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="b" id="b3" onclick="toe('3')" value="">
+                    </td>
+                    <td>
+                        <input type="button" class="b" id="b4" onclick="toe('4')" value="">
+                    </td>
+                    <td>
+                        <input type="button" class="b" id="b5" onclick="toe('5')" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="b" id="b6" onclick="toe('6')" value="" >
+                    </td>
+                    <td>
+                        <input type="button" class="b" id="b7" onclick="toe('7')" value="">
+                    </td>
+                    <td>
+                        <input type="button" class="b" id="b8" onclick="toe('8')" value=""> 
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <br>
+            <br>
+        <input type="text" id="result" value=""  class="red" readonly>
+        <br>
+        <br>
+        <button class="reset" id="reset" onclick="reset()">New game</button>
+    </div>
+        
+        <script src="backend.js"></script>
+</body>
+</html>
